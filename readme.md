@@ -89,6 +89,23 @@ ORDER BY start_checkout_date;
 
 <br>
 
+## Questão 5
+- LEncontre as visitas onde o desconto aplicado foi maior do que 20% (discount < -0.20). Exiba as colunas visit_id, product_id, e discount. <br>
+
+- Comandos SQL: <br>
+```
+SELECT visit_id, product_id, discount
+FROM sales.funnel
+WHERE discount < -0.20
+ORDER BY discount;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](/images/q5.png)
+
+<br>
+
 
 
 
