@@ -55,7 +55,22 @@ ORDER BY add_to_cart_date;
 
 <br>
 
+## Questão 3
+- Recupere todos os registros onde a data de pagamento (paid_date) não é nula. Exiba os campos visit_id, customer_id, e paid_date. <br>
 
+- Comandos SQL: <br>
+```
+SELECT visit_id, customer_id, paid_date
+FROM sales.funnel
+WHERE paid_date IS NOT NULL
+ORDER BY paid_date;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](/images/q3.png)
+
+<br>
 
 
 
