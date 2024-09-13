@@ -23,7 +23,21 @@ Instrutora: [NayaraWakweski](https://github.com/NayaraWakewski) <br>
 - Fazer "Restore" do banco de dados (Interface gráfica). <br>
 ![screenshot](/images/restore.png) <br>
 
+## Questão 1
+- Selecione todos os registros da tabela sales.funnel, exibindo as colunas visit_id,
+customer_id, product_id, e store_id. <br>
 
+- Comandos SQL: <br>
+```
+SELECT visit_id, customer_id, product_id, store_id
+FROM sales.funnel;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](/images/q1.png)
+
+<br>
 
 
 
