@@ -102,7 +102,7 @@ ORDER BY discount;
 <br>
 
 - Visualização: <br>
-![screenshot](/images/q5.png)
+![screenshot](images/q5.png)
 
 <br>
 
@@ -115,3 +115,5 @@ ORDER BY discount;
 - Business Card - [Renato Albuquerque](https://rma-contacts.vercel.app/)
 - Linkedin - [renato-malbuquerque](https://www.linkedin.com/in/renato-malbuquerque/)
 - Discord - [Renato Albuquerque#0025](https://discordapp.com/users/992621595547938837)
+
+[def]: /images/q5.png
