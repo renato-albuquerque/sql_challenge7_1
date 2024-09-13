@@ -72,7 +72,22 @@ ORDER BY paid_date;
 
 <br>
 
+## Questão 4
+- Liste as visitas onde o cliente iniciou o processo de checkout (start_checkout_date), exibindo as colunas visit_id, customer_id, product_id e start_checkout_date. <br>
 
+- Comandos SQL: <br>
+```
+SELECT visit_id, customer_id, product_id, start_checkout_date
+FROM sales.funnel
+WHERE start_checkout_date IS NOT NULL
+ORDER BY start_checkout_date;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](/images/q4.png)
+
+<br>
 
 
 
