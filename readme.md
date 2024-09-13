@@ -11,8 +11,9 @@ Instrutora: [NayaraWakweski](https://github.com/NayaraWakewski) <br>
 ## Etapas de Desenvolvimento
 
 ### Enunciado das Questões:
-![screenshot](/QUESTOES%20DESAFIO%20BD%20VENDAS.pdf)
-
+![screenshot](/images/questions_level1.png) <br>
+![screenshot](/images/questions_level2.png) <br>
+![screenshot](/images/questions_level3.png) <br>    
 <br>
 
 ## Restore do Banco de Dados
