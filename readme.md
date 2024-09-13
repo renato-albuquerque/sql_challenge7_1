@@ -102,7 +102,7 @@ ORDER BY discount;
 <br>
 
 - Visualização: <br>
-![screenshot](images/q5.png)
+![screenshot](images/q5_1.png)
 
 <br>
 
