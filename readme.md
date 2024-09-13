@@ -24,8 +24,7 @@ Instrutora: [NayaraWakweski](https://github.com/NayaraWakewski) <br>
 ![screenshot](/images/restore.png) <br>
 
 ## Questão 1
-- Selecione todos os registros da tabela sales.funnel, exibindo as colunas visit_id,
-customer_id, product_id, e store_id. <br>
+- Selecione todos os registros da tabela sales.funnel, exibindo as colunas visit_id, customer_id product_id, e store_id. <br>
 
 - Comandos SQL: <br>
 ```
@@ -39,7 +38,22 @@ FROM sales.funnel;
 
 <br>
 
+## Questão 2
+- Liste todos os produtos (product_id) que foram adicionados ao carrinho, exibindo também as datas em que isso ocorreu (add_to_cart_date). <br>
 
+- Comandos SQL: <br>
+```
+SELECT product_id, add_to_cart_date
+FROM sales.funnel
+WHERE add_to_cart_date IS NOT NULL
+ORDER BY add_to_cart_date;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](/images/q2.png)
+
+<br>
 
 
 
