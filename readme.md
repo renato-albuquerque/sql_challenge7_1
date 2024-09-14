@@ -123,6 +123,20 @@ ORDER BY product_id;
 
 <br>
 
+## Questão 7
+- Calcule a média do desconto aplicado em todas as transações. Exiba a média do campo discount. <br>
+
+- Comandos SQL: <br>
+```
+SELECT AVG (discount)::NUMERIC(8,4)
+FROM sales.funnel;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](images/q7.png)
+
+<br>
 
 
 ## Meus Contatos
