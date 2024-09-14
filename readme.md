@@ -128,13 +128,28 @@ ORDER BY product_id;
 
 - Comandos SQL: <br>
 ```
-SELECT AVG (discount)::NUMERIC(8,4)
+SELECT AVG(discount)::NUMERIC(8,4)
 FROM sales.funnel;
 ``` 
 <br>
 
 - Visualização: <br>
 ![screenshot](images/q7.png)
+
+<br>
+
+## Questão 8
+- Conte quantas transações foram iniciadas com um processo de checkout (start_checkout_date). Nomeie a contagem como checkout_count. <br>
+
+- Comandos SQL: <br>
+```
+SELECT COUNT(start_checkout_date) AS checkout_count
+FROM sales.funnel;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](images/q8.png)
 
 <br>
 
