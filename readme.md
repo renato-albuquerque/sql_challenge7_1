@@ -90,7 +90,7 @@ ORDER BY start_checkout_date;
 <br>
 
 ## Questão 5
-- LEncontre as visitas onde o desconto aplicado foi maior do que 20% (discount < -0.20). Exiba as colunas visit_id, product_id, e discount. <br>
+- Encontre as visitas onde o desconto aplicado foi maior do que 20% (discount < -0.20). Exiba as colunas visit_id, product_id, e discount. <br>
 
 - Comandos SQL: <br>
 ```
@@ -106,7 +106,22 @@ ORDER BY discount;
 
 <br>
 
+## Questão 6
+- Selecione as visitas feitas por clientes em lojas específicas. Liste todos os registros onde o store_id é 'BF580E604866'. Exiba as colunas visit_id, customer_id, product_id, e store_id. <br>
 
+- Comandos SQL: <br>
+```
+SELECT visit_id, customer_id, product_id, store_id
+FROM sales.funnel
+WHERE store_id = 'BF580E604866'
+ORDER BY product_id;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](images/q6.png)
+
+<br>
 
 
 
