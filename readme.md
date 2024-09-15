@@ -153,6 +153,25 @@ FROM sales.funnel;
 
 <br>
 
+## Questão 9
+- Calcule a taxa de conversão para cada loja. Para isso, obtenha o número total de visitas (COUNT(*)) e o número de transações finalizadas (onde paid_date não é nulo), depois calcule a taxa de conversão (transações finalizadas / total de visitas * 100). Exiba store_id, o total de visitas, transações finalizadas e a taxa de conversão, nomeando a coluna como conversion_rate. <br>
+
+- Comandos SQL: <br>
+```
+SELECT store_id, 
+COUNT(visit_page_date) AS total_visits,
+COUNT(CASE WHEN paid_date IS NOT NULL THEN 1 END) AS completed_transactions,
+ROUND((COUNT(CASE WHEN paid_date IS NOT NULL THEN 1 END) * 100 / COUNT(visit_page_date)), 1) AS conversion_rate
+FROM sales.funnel
+GROUP BY store_id
+ORDER BY total_visits DESC;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](images/q9.png)
+
+<br>
 
 ## Meus Contatos
 
