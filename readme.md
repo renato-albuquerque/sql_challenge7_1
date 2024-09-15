@@ -173,10 +173,34 @@ ORDER BY total_visits DESC;
 
 <br>
 
+## Questão 10
+- Liste os 5 produtos mais vendidos (com transações pagas), exibindo as colunas product_id, paid_date e store_id. Ordene os resultados pela data de pagamento mais recente. <br>
+
+- Comandos SQL: <br>
+```
+SELECT
+    product_id,
+    MAX(paid_date) AS last_sale,
+    COUNT(*) AS total_sales --PLUS
+FROM
+    sales.funnel
+WHERE
+    paid_date IS NOT NULL
+GROUP BY
+    product_id
+ORDER BY
+    total_sales DESC
+LIMIT 5;
+``` 
+<br>
+
+- Visualização: <br>
+![screenshot](images/q10.png)
+
+<br>
+
 ## Meus Contatos
 
 - Business Card - [Renato Albuquerque](https://rma-contacts.vercel.app/)
 - Linkedin - [renato-malbuquerque](https://www.linkedin.com/in/renato-malbuquerque/)
 - Discord - [Renato Albuquerque#0025](https://discordapp.com/users/992621595547938837)
-
-[def]: /images/q5.png
