@@ -43,7 +43,33 @@ FROM sales.funnel;
 SELECT COUNT(start_checkout_date) AS checkout_count
 FROM sales.funnel;
 
--- Question 09 (On going)
+-- Question 09
+SELECT store_id, 
+COUNT(visit_page_date) AS total_visits,
+COUNT(CASE WHEN paid_date IS NOT NULL THEN 1 END) AS completed_transactions,
+ROUND((COUNT(CASE WHEN paid_date IS NOT NULL THEN 1 END) * 100 / COUNT(visit_page_date)), 1) AS conversion_rate
+FROM sales.funnel
+GROUP BY store_id
+ORDER BY total_visits DESC;
 
--- Question 10 (On going)
+-- Question 10
+SELECT
+    product_id,
+    MAX(paid_date) AS last_sale,
+    COUNT(*) AS total_sales --PLUS
+FROM
+    sales.funnel
+WHERE
+    paid_date IS NOT NULL
+GROUP BY
+    product_id
+ORDER BY
+    total_sales DESC
+LIMIT 5;
+
+
+
+
+
+
 
